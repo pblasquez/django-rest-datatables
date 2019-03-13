@@ -12,20 +12,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-FROM python:3-alpine
+FROM python:3
 
 MAINTAINER Paul Blasquez <pblasquez@gmail.com>
 
-RUN apk add --update && \
-    apk add mariadb-connector-c-dev && \
+RUN apt-get update && \
     pip install django && \
     pip install django-bootstrap4 && \
     pip install djangorestframework-datatables && \
     pip install django-rest-swagger && \
     pip install django-filter && \
     pip install mysqlclient && \
-    pip install markdown # Markdown support for the browsable API. \
-    && rm -rf /var/cache/apk/*
+    pip install markdown # Markdown support for the browsable API.
 
 RUN mkdir /app
 
