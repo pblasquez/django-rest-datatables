@@ -17,6 +17,7 @@ FROM python:3-alpine
 MAINTAINER Paul Blasquez <pblasquez@gmail.com>
 
 RUN apk add --update && \
+    apk add mariadb-connector-c-dev && \
     pip install django && \
     pip install django-bootstrap4 && \
     pip install djangorestframework-datatables && \
