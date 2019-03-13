@@ -1,5 +1,5 @@
-# Django and Django REST Framework (latest) on Python 3
-# Copyright (C) 2017 José Antonio López <dev@kstromeiraos.com>
+# Django, Django REST Framework, and Datatables (latest) on Python 3
+# Copyright (C) 2019 Paul Blasquez <pblasquez@gmail.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,11 +14,15 @@
 
 FROM python:3-alpine
 
-MAINTAINER José Antonio López <dev@kstromeiraos.com>
+MAINTAINER Paul Blasquez <pblasquez@gmail.com>
 
 RUN apk add --update && \
     pip install django && \
-    pip install djangorestframework && \
+    pip install django-bootstrap4 && \
+    pip install djangorestframework-datatables && \
+    pip install django-rest-swagger && \
+    pip install django-filter && \
+    pip install mysqlclient && \
     pip install markdown # Markdown support for the browsable API. \
     && rm -rf /var/cache/apk/*
 
