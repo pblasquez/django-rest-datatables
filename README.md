@@ -4,11 +4,21 @@ Django REST framework is a powerful and flexible toolkit for building Web APIs.
 
 See http://www.django-rest-framework.org for more information.
 
+# Datatables
+
+The stated goal of DataTables is "To enhance the accessibility of data in HTML tables".
+
+See https://datatables.net/ for more information.
+
 ## Software versions
 
 - python: 3
 - django: latest
-- django-rest-framework: latest
+- djangorestframework-datatables: latest
+- django-bootstrap4: latest
+- django-rest-swagger: latest
+- django-filter: latest
+- mysqlclient: latest
 
 ## Usage
 
