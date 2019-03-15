@@ -31,7 +31,7 @@ Be aware that you only have to put as command the part after python manage.py, s
 This will create an application called DJANGO_PROJECT_NAME and serve it in port 80
 
 ```bash
-docker run -d --name="django" -p 80:80 -e project=DJANGO_PROJECT_NAME -v HOST_DIRECTORY_DJANGO_PROJECT:/app kstromeiraos/django-rest-framework-docker runserver 0.0.0.0:80
+docker run -d --name="django" -p 80:80 -e project=DJANGO_PROJECT_NAME -v HOST_DIRECTORY_DJANGO_PROJECT:/app pblasquez/django-rest-datatables runserver 0.0.0.0:80
 ```
 
 #### Serve Django application 
@@ -39,7 +39,7 @@ docker run -d --name="django" -p 80:80 -e project=DJANGO_PROJECT_NAME -v HOST_DI
 This will serve a django application in port 80
 
 ```bash
-docker run -d --name="django" -p 80:80 -v HOST_DIRECTORY_DJANGO_PROJECT:/app kstromeiraos/django-rest-framework-docker runserver 0.0.0.0:80
+docker run -d --name="django" -p 80:80 -v HOST_DIRECTORY_DJANGO_PROJECT:/app pblasquez/django-rest-datatables runserver 0.0.0.0:80
 ```
 
 #### Create migrations
