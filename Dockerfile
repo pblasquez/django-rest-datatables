@@ -22,6 +22,7 @@ RUN apt-get update && \
     pip install djangorestframework-datatables && \
     pip install django-rest-swagger && \
     pip install django-filter && \
+    pip install django-composite-foreignkey && \
     pip install mysqlclient && \
     pip install markdown # Markdown support for the browsable API.
 
